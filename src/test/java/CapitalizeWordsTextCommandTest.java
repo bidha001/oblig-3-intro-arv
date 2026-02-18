@@ -1,4 +1,3 @@
-import edu.ntnu.bidata.prog2.CapitalizeWordsTextCommand;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -6,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CapitalizeWordsTextCommandTest {
     @Test
     public void shouldCapitalizeEveryWord() {
-        CapitalizeWordsTextCommand command = new CapitalizeWordsTextCommand();
+        edu.ntnu.bidata.prog2.CapitalizeWordsTextCommand command = new edu.ntnu.bidata.prog2.CapitalizeWordsTextCommand();
 
         String result = command.execute("hello world from java");
 

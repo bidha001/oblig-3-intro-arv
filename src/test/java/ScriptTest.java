@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ScriptTest {
     @Test
-    void shouldExecuteCommandsInSequence() {
+    public void shouldExecuteCommandsInSequence() {
 
         TextCommand replace = new ReplaceTextCommand("hello", "hi");
 

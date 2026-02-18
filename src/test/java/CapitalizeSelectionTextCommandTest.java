@@ -1,4 +1,3 @@
-import edu.ntnu.bidata.prog2.CapitalizeSelectionTextCommand;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -6,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CapitalizeSelectionTextCommandTest {
     @Test
     public void shouldCapitalizeSelectedWordOnly() {
-        CapitalizeSelectionTextCommand command = new CapitalizeSelectionTextCommand("selection");
+        edu.ntnu.bidata.prog2.CapitalizeSelectionTextCommand command = new edu.ntnu.bidata.prog2.CapitalizeSelectionTextCommand("selection");
 
         String input = "text with selection and other selection";
         String expected = "text with Selection and other Selection";
