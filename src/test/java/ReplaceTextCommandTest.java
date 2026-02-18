@@ -1,5 +1,6 @@
 
 
+import edu.ntnu.idatx2003.ReplaceTextCommand;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,7 +8,7 @@ class ReplaceTextCommandTest {
 
     @Test
     void shouldReplaceAllOccurrences() {
-        edu.ntnu.bidata.prog2.ReplaceTextCommand command = new edu.ntnu.bidata.prog2.ReplaceTextCommand("target", "replacement");
+        ReplaceTextCommand command = new ReplaceTextCommand("target", "replacement");
 
         String result = command.execute("text with target and target");
 
@@ -16,7 +17,7 @@ class ReplaceTextCommandTest {
 
     @Test
     void shouldReturnSameTextIfTargetNotFound() {
-        edu.ntnu.bidata.prog2.ReplaceTextCommand command = new edu.ntnu.bidata.prog2.ReplaceTextCommand("zzz", "y");
+        ReplaceTextCommand command = new ReplaceTextCommand("zzz", "y");
 
         String result = command.execute("text without match");
 

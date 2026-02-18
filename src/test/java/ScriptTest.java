@@ -1,4 +1,4 @@
-import edu.ntnu.bidata.prog2.*;
+import edu.ntnu.idatx2003.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

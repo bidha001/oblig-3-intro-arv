@@ -1,3 +1,4 @@
+import edu.ntnu.idatx2003.CapitalizeTextCommand;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -5,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CapitalizeTextCommandTest {
     @Test
     public void shouldCapitalizeFirstLetter() {
-        edu.ntnu.bidata.prog2.CapitalizeTextCommand command = new edu.ntnu.bidata.prog2.CapitalizeTextCommand();
+        CapitalizeTextCommand command = new CapitalizeTextCommand();
 
         String result = command.execute("hello world");
 
@@ -14,7 +15,7 @@ public class CapitalizeTextCommandTest {
 
     @Test
     public void shouldReturnEmptyIfInputIsEmpty() {
-        edu.ntnu.bidata.prog2.CapitalizeTextCommand command = new edu.ntnu.bidata.prog2.CapitalizeTextCommand();
+        CapitalizeTextCommand command = new CapitalizeTextCommand();
 
         String result = command.execute("");
 

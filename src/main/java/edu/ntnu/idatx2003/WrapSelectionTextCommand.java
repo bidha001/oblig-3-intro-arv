@@ -1,4 +1,4 @@
-package edu.ntnu.bidata.prog2;
+package edu.ntnu.idatx2003;
 
 public class WrapSelectionTextCommand extends WrapTextCommand{
     private String selection;

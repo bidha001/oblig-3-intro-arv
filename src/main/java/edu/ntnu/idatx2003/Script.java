@@ -1,4 +1,4 @@
-package edu.ntnu.bidata.prog2;
+package edu.ntnu.idatx2003;
 
 import java.util.List;
 
