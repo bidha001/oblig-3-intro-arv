@@ -1,4 +1,4 @@
-import edu.ntnu.idatx2003.WrapLinesTextCommand;
+import edu.ntnu.idatx2003.wrap.WrapLinesTextCommand;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,4 +1,4 @@
-package edu.ntnu.idatx2003;
+package edu.ntnu.idatx2003.replace;
 
 public class ReplaceFirstTextCommand extends ReplaceTextCommand{
     public ReplaceFirstTextCommand(String target, String replacement) {

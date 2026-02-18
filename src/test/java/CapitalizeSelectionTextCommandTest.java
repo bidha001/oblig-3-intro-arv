@@ -1,4 +1,4 @@
-import edu.ntnu.idatx2003.CapitalizeSelectionTextCommand;
+import edu.ntnu.idatx2003.capitalize.CapitalizeSelectionTextCommand;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

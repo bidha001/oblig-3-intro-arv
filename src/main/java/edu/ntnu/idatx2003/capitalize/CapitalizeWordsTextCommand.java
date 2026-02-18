@@ -1,4 +1,4 @@
-package edu.ntnu.idatx2003;
+package edu.ntnu.idatx2003.capitalize;
 
 public class CapitalizeWordsTextCommand extends CapitalizeTextCommand {
     @Override

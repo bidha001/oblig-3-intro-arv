@@ -1,4 +1,4 @@
-package edu.ntnu.idatx2003;
+package edu.ntnu.idatx2003.wrap;
 
 public class WrapSelectionTextCommand extends WrapTextCommand{
     private String selection;

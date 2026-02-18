@@ -1,4 +1,4 @@
-import edu.ntnu.idatx2003.ReplaceFirstTextCommand;
+import edu.ntnu.idatx2003.replace.ReplaceFirstTextCommand;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

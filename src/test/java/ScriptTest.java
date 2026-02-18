@@ -1,4 +1,7 @@
 import edu.ntnu.idatx2003.*;
+import edu.ntnu.idatx2003.capitalize.CapitalizeTextCommand;
+import edu.ntnu.idatx2003.wrap.WrapTextCommand;
+import edu.ntnu.idatx2003.replace.ReplaceTextCommand;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
