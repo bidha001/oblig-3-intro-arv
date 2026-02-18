@@ -8,8 +8,7 @@ class ReplaceTextCommandTest {
 
     @Test
     void shouldReplaceAllOccurrences() {
-        ReplaceTextCommand command =
-                new ReplaceTextCommand("target", "replacement");
+        ReplaceTextCommand command = new ReplaceTextCommand("target", "replacement");
 
         String result = command.execute("text with target and target");
 
@@ -18,8 +17,7 @@ class ReplaceTextCommandTest {
 
     @Test
     void shouldReturnSameTextIfTargetNotFound() {
-        ReplaceTextCommand command =
-                new ReplaceTextCommand("zzz", "y");
+        ReplaceTextCommand command = new ReplaceTextCommand("zzz", "y");
 
         String result = command.execute("text without match");
 
