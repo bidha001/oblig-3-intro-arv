@@ -6,10 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ReplaceFirstTextCommandTest {
     @Test
     public void shouldReplaceOnlyFirstOccurrence(){
-        ReplaceFirstTextCommand command = new ReplaceFirstTextCommand("target", "replacement");
-        String result = command.execute("target and target");
+        ReplaceFirstTextCommand command = new ReplaceFirstTextCommand("Dong", "Ding");
+        String result = command.execute("Ding Ding Dong");
 
-        assertEquals("replacement and target", result);
+        assertEquals("Ding Ding Ding", result);
 
     }
 }

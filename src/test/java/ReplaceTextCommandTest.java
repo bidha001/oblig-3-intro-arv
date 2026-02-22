@@ -8,19 +8,19 @@ class ReplaceTextCommandTest {
 
     @Test
     void shouldReplaceAllOccurrences() {
-        ReplaceTextCommand command = new ReplaceTextCommand("target", "replacement");
+        ReplaceTextCommand command = new ReplaceTextCommand("Ding", "Dong");
 
-        String result = command.execute("text with target and target");
+        String result = command.execute("Ding Ding Dong");
 
-        assertEquals("text with replacement and replacement", result);
+        assertEquals("Dong Dong Dong", result);
     }
 
     @Test
     void shouldReturnSameTextIfTargetNotFound() {
-        ReplaceTextCommand command = new ReplaceTextCommand("zzz", "y");
+        ReplaceTextCommand command = new ReplaceTextCommand("NOPE", "YES");
 
-        String result = command.execute("text without match");
+        String result = command.execute("Ding Ding Dong");
 
-        assertEquals("text without match", result);
+        assertEquals("Ding Ding Dong", result);
     }
 }

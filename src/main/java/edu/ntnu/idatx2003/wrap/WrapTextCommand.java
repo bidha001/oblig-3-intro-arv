@@ -23,4 +23,14 @@ public class WrapTextCommand implements TextCommand {
     public String execute(String text) {
         return opening + text + end;
     }
+
+    public static void main(String[] args) {
+        String test = "Ding Ding Dong";
+        WrapTextCommand command = new WrapTextCommand("<b>", "</b>");
+
+        String result = command.execute(test);
+
+        System.out.println("Original: " + test);
+        System.out.println("Modified: " + result);
+    }
 }

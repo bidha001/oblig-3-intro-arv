@@ -23,4 +23,13 @@ public class ReplaceTextCommand implements TextCommand {
     public String execute(String text) {
         return text.replace(target, replacement);
     }
+
+    public static void main(String[] args) {
+        String text = "ding ding dong";
+        ReplaceTextCommand command = new ReplaceTextCommand("dong", "ding");
+        String result = command.execute(text);
+
+        System.out.println("Original: " + text);
+        System.out.println("Modified: " + result);
+    }
 }

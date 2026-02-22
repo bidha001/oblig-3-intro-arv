@@ -8,8 +8,8 @@ public class WrapLinesTextCommandTest {
     public void shouldWrapEachLineSeperately(){
         WrapLinesTextCommand command = new WrapLinesTextCommand("<p>", "</p>");
 
-        String input = "first line\nsecond line";
-        String expected = "<p>first line</p>\n<p>second line</p>";
+        String input = "Ding Ding Ding\nDong Dong Dong";
+        String expected = "<p>Ding Ding Ding</p>\n<p>Dong Dong Dong</p>";
 
         String result = command.execute(input);
 

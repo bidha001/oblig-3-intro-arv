@@ -6,10 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CapitalizeSelectionTextCommandTest {
     @Test
     public void shouldCapitalizeSelectedWordOnly() {
-        CapitalizeSelectionTextCommand command = new CapitalizeSelectionTextCommand("selection");
+        CapitalizeSelectionTextCommand command = new CapitalizeSelectionTextCommand("ding");
 
-        String input = "text with selection and other selection";
-        String expected = "text with Selection and other Selection";
+        String input = "ding ding Dong";
+        String expected = "Ding Ding Dong";
 
         String result = command.execute(input);
 

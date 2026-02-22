@@ -7,8 +7,8 @@ public class WrapTextCommandTest {
     @Test
     public void shouldWrapWholeText(){
         WrapTextCommand command = new WrapTextCommand("<p>", "</p>");
-        String result = command.execute("Heisann Byesann.");
+        String result = command.execute("Ding Ding Dong.");
 
-        assertEquals("<p>Heisann Byesann.</p>", result);
+        assertEquals("<p>Ding Ding Dong.</p>", result);
     }
 }

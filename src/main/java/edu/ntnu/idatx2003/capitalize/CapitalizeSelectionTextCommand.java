@@ -16,4 +16,14 @@ public class CapitalizeSelectionTextCommand extends CapitalizeTextCommand{
         String capitalized = super.execute(selection);
         return text.replace(selection, capitalized);
     }
+
+    public static void main(String[] args) {
+        String text = "ding ding dong";
+        CapitalizeSelectionTextCommand command = new CapitalizeSelectionTextCommand("ding");
+
+        String result = command.execute(text);
+
+        System.out.println("Original: " + text);
+        System.out.println("Modified: " + result);
+    }
 }

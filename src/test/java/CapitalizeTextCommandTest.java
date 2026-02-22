@@ -8,9 +8,9 @@ public class CapitalizeTextCommandTest {
     public void shouldCapitalizeFirstLetter() {
         CapitalizeTextCommand command = new CapitalizeTextCommand();
 
-        String result = command.execute("hello world");
+        String result = command.execute("ding Ding Dong");
 
-        assertEquals("Hello world", result);
+        assertEquals("Ding Ding Dong", result);
     }
 
     @Test

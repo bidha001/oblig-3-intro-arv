@@ -17,4 +17,14 @@ public class WrapSelectionTextCommand extends WrapTextCommand{
         return text.replace(selection,
                 getOpening() + selection + getEnd());
     }
+
+    public static void main(String[] args) {
+        String test = "Ding Ding Dong";
+        WrapSelectionTextCommand command = new WrapSelectionTextCommand("<b>", "</b>", "Dong");
+
+        String result = command.execute(test);
+
+        System.out.println("Original: " + test);
+        System.out.println("Modified: " + result);
+    }
 }
